@@ -2,22 +2,23 @@ import { Component } from 'react';
 import './App.css';
 import Header from './componentes/Header';
 import styled from 'styled-components';
+import Pesquisa from './componentes/Pesquisa';
+import UltimosLancamentos from './componentes/UltimosLancamentos';
 
-const AppContainer = `
+
+// container que guarda estilos (styled container)
+// styled-Component guarda os estilos
+const AppContainer = styled.div`
   width: 100vw;
   height: 100vw;
   background-image: linear-gradient(90deg, #002f52 35%, #326589);
-
-
-li {
-  list-style: none;
-}
 `
-// styled-Component guarda os estilos
 function App() {
   return (
     <AppContainer>
       <Header />
+      <Pesquisa/>
+      <UltimosLancamentos/>
     </AppContainer>
   );
 }
